@@ -113,7 +113,7 @@ img{
 }
 .here{
     background-color: #FFFBEC;
-    padding: 0.3rem 0.4rem;
+    padding: 0.3rem 0.3rem;
     width:16.5rem;
     border-radius: 1rem;
     font-size: 17px;
@@ -155,7 +155,7 @@ img{
 .content{
     background-color: #D8BFD8;
     font-family: MonaSansWide ;
-    /* padding: 3rem; */
+    padding: 2rem;
      display: flex;
     justify-content: center;
     align-items: center; 
@@ -172,7 +172,56 @@ img{
     font-size: 1.1rem;
     max-width: 30rem;
 }
+.part{
+    padding: 1rem;
+}
 
+.box1{
+    background: black;
+    min-width: 20rem;
+    min-height: 30rem;
+}
+.box2{
+    font-family:"Roboto", sans-serif;
+    margin-top: 2rem;
+}
+.box2 h2{
+    font-size:2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.box2 p{
+    margin-bottom:0.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.book{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem 0.8rem;
+    border-radius: 2rem;
+    background-color: rgb(153, 255, 153);
+    color: black;
+    transition: 0.8s ease-in-out;
+}
+.book img{
+    max-width: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.specials{
+    padding:1rem;
+}
+.special{
+    display: grid;
+    grid-template-columns:repeat(3, 300px);
+    max-width: 80rem;
+    justify-content: center;
+    gap:2rem;
+}
+.spec-one{
+
+} 
 @media(max-width:600px){
     .partb{
         flex-direction: column-reverse;
@@ -189,4 +238,19 @@ img{
     .partb{
         margin-top: 1rem;
     }
+}
+@media(min-width:1025px){
+    .boxes{
+    display:flex;
+   max-width: 800px;
+   margin: auto;
+   gap:2rem; 
+   margin-top: 2rem;
+   
+} 
+.box1{
+    background:#2f2f2f;
+    min-width: 25rem;
+    min-height: 30rem;
+}
 }
