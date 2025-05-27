@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: Lato, Lato Fallback;
 }
-header{
-    padding:1rem;
-}
 a{
     text-decoration: none;
 }
@@ -125,7 +122,7 @@ img{
 .partb{
     display:flex;
     gap:2rem;
-    margin-top:2rem;
+    padding: 0.6rem;
 }
 .parts img{
     max-width: 50rem;
@@ -155,11 +152,41 @@ img{
     margin-top:0.1rem;
     margin-bottom: 0.5rem;
 }
+.content{
+    background-color: #D8BFD8;
+    font-family: MonaSansWide ;
+    /* padding: 3rem; */
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 1rem;
+}
+.text-block h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    max-width:32rem;
+    margin-top: 6rem;
+}
+.text-block p{
+    font-size: 1.1rem;
+    max-width: 30rem;
+}
+
 @media(max-width:600px){
     .partb{
-        display:block;
+        flex-direction: column-reverse;
     }
     .parts img{
-        max-width: 24rem;
+        max-width: 23rem;
+    }
+    .content{
+        padding: 0.6rem;
+    }
+    .texts h3{
+        font-size: 1.6rem;
+    }
+    .partb{
+        margin-top: 1rem;
     }
 }
